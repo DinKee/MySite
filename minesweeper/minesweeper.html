@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--Dec, 2020-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Mine Sweeper</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--jquery -->
+        <link rel="stylesheet" href="minesweeper.css" media="screen">
+        <link rel="stylesheet" href="../TimeCircles.css">
+        <script src="../TimeCircles.js"></script>
+    </head>
+    <body>
+        <section id="main">
+            
+            <div class="top_bar">
+                
+                <div id="gameSetting">
+                    <div id="time"></div>
+                    <select id="difficulty">
+                        <option value="choice">難度選擇</option>
+                        <option value="easy">簡單</option>
+                        <option value="medium">中級</option>
+                        <option value="hard">困難</option>
+                    </select>
+                    Bomb Number: <input id="bombNum" name="bombNum" type="number" value="0" size="30" style="width: 30px;">
+                    <button id="gene">Generate！</button>
+                    <div id="bombLeft"></div>
+                </div>
+                
+                
+            </div>
+
+            <div id="gamePlace"></div>
+            <div></div>
+
+        </section>
+        <script type="text/javascript" src="minesweeper.js"></script>
+    </body>
+</html>

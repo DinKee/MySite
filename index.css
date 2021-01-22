@@ -1,0 +1,311 @@
+* {
+    /* border: solid 1px #eee;   */
+    position: relative;
+    /* box-sizing: border-box; */
+}
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+section , footer{
+    width: 100%;
+    height: 100%;
+    color: #eee;
+    font-family: 'Russo One', sans-serif, 微軟正黑體;
+}
+body{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    background-color: rgba(255,255,255,0.3);
+}
+/* #main ,#about_me, footer{
+    
+} */
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: #eee;
+}
+/* navigation bar */
+nav div {
+    display: inline-block;
+    font-size: large;
+    margin: 20px 0px;
+    font-weight: bold;
+}
+nav div span:hover {
+    cursor: pointer;
+}
+.float-right {
+    float: right;
+}
+/* .float-left {
+    float: left;
+} */
+nav div span {
+    font-size: 30px;
+}
+nav {
+    font-size: 0px;
+}
+
+.container {
+    height: 70%;
+    width: 100%;
+    /* display: inline-block; */
+}
+
+.namecard , #time {
+    display: inline-block;
+    position: absolute;
+}
+
+/* namecard */
+.namecard{
+    font-family: 'Noto Sans TC', sans-serif, 微軟正黑體;
+    width:350px;
+    height:200px;
+    padding:20px;
+
+    margin-left:60%;
+    margin-right:auto;
+    margin-top:15%;
+    /* background-color:#eee; */
+    
+    /* letter-spacing:1px;
+    font-weight:300;
+    
+    color:#666; */
+    overflow:hidden;
+    /* border:solid 1px rgba(0,0,0,0.15); */
+    border-radius:4px;
+    
+    /* box-shadow:10px 10px 15px rgba(0,0,0,0.2); */
+    transition-duration: 0.5s;
+    
+}
+.namecard:hover{
+    font-family: 'Noto Sans TC', sans-serif, 微軟正黑體;
+    width:350px;
+    height:200px;
+    padding:20px;
+    margin-left:60%;
+    margin-right:auto;
+    margin-top:15%;
+    background-color:#eee;
+
+    letter-spacing:1px;
+    font-weight:300;
+
+    color:#666;
+    overflow:hidden;
+    border:solid 1px rgba(0,0,0,0.15);
+    border-radius:4px;
+
+    box-shadow:10px 10px 15px rgba(0,0,0,0.2);
+    transition-duration: 0.5s;
+}
+  
+.namecard h2{
+    font-size:25px;
+    margin-top:5px;
+    margin-bottom:10px;
+    font-weight:500;
+}
+.namecard h2 span{
+    font-size:15px;
+}
+.namecard h5{
+    margin-top:5px;
+    margin-bottom:10px;
+}
+.namecard:hover h5{
+    margin-top:5px;
+    margin-bottom:10px;
+    color:#F24;
+}
+.namecard p{
+    font-size:12px;
+    line-height:22px;
+    margin-bottom:0px;
+}
+.namecard:hover .circle{
+    width:100px; height:100px;
+    border-radius:100%;
+    position:absolute;
+}
+.namecard:hover .circle1{
+    right:100px;
+    bottom:-80px;
+    background-color:#F24;
+    transition-duration: 0.5s;
+}
+/* .circle2{
+width:60px; height:60px;
+right:-30px;
+top:-30px;
+border: solid 3px #F24;
+} */
+.logo img{
+    position:absolute;
+    bottom:180px;
+    right:0px;
+    width:60px;
+    height:50px;
+    filter:grayscale(50%);
+}
+.namecard:hover .jetslogo img{
+    position:absolute;
+    bottom:50px;
+    right:10px;
+    width:50px;
+    height:50px;
+    transition-duration: 0.5s;
+}
+.skills{
+    display:block;
+    margin-top:0px;
+    padding-left:0px;
+    padding-right:0px;
+    /*   border:solid 1px black; */
+    font-weight:500;
+}
+.skills li{
+    display:inline;
+    font-size : 12px;
+    border:none;
+    border-radius:5px;
+
+    background-color:#d6abab;
+    color:#eee;
+
+    margin-right:0px;
+    letter-spacing:0.5px;
+    padding:1px;
+}
+/* .page_title{
+    text-align : center;
+    color:#555;
+    font-weight:500px;
+} */
+.mark{
+    font-size:300px;
+    position:absolute;
+    bottom:100px;
+    font-weight:100;
+    color:rgba(0,0,0,0.035)
+}
+
+/* time */
+#time {
+    /* position: absolute; */
+    width: 50%;
+    height: 50%;
+    left: 5%;
+    right: auto;
+    top: 40%;
+}
+
+/* slogan */
+.slogan {
+    font-size: 30px;
+    margin: 10px 5px;
+    left: 5%;
+    width: fit-content;
+}
+
+/*                 Section About me                     */
+#about_me {
+    height: 120%;
+}
+.block, .icons{
+    display: inline-block;
+}
+/* title */
+.page_title {
+    font-size: 30px;
+    left: 20px;
+    width: fit-content;
+}
+/* block */
+.block {
+    position: absolute;
+    width: 550px;
+    right: 10%;
+}
+.block > div {
+    transition-duration: 0.8s;
+    padding: 15px;
+}
+.block > div:hover {
+    transform: translateY(-0) translateX(0);
+    box-shadow: 10px 10px 30px rgba(50,50,50,0.3);
+    background-color: rgba(40, 59, 92, 0.8);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+h6 {
+    font-weight: 300;
+    font-family: "Noto Sans TC", sans-serif;
+    letter-spacing: 2px;
+}
+.title {
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+}
+
+/* info */
+
+/* icons */
+.icons {
+    width: 300px;
+    left: 15%;
+    top:15%;
+}
+.icon{
+    margin-top: 15px;
+    font-size: 0px;
+}
+.icon img {
+    height: 100px;
+    
+}
+.back{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 90px;
+    height: 90%;
+    background-color: #eee;   
+}
+/* footer */
+footer {
+    width: 100%;
+    height: 200px;
+    top: 0px;
+}
+footer div{
+    width: fit-content;
+    height: fit-content;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin: 0px;
+}
+hr {
+    width: 300px;
+    margin-top: 0px;
+    transition-duration: 0.5s;
+}
+footer:hover hr{
+    width: 700px;
+}
+
